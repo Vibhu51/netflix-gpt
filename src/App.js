@@ -1,9 +1,10 @@
-import './App.css';
+import Body from "./components/Body";
+import { Provider } from "react-redux";
+import appStore from "./utilities/reduxStore";
 
 function App() {
-  return (
-    <div className="text-green-300 font-bold text-xl">This is netflix GPT </div>
-  );
+  return <Provider store={appStore}><Body /></Provider>;
 }
 
 export default App;
+  
